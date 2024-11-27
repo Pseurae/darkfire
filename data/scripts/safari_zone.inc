@@ -49,6 +49,12 @@ EventScript_PokeBlockFeeder::
 	releaseall
 	end
 
+EventScript_PokeBlockEffectFaded::
+	lock
+	msgbox Text_PokeBlockEffectFaded, MSGBOX_SIGN
+	release
+	end
+
 SafariZone_EventScript_ChoosePokeblock::
 	fadescreen FADE_TO_BLACK
 	special OpenPokeblockCaseOnFeeder
@@ -290,3 +296,6 @@ SafariZone_Northeast_Text_Girl:
 	.string "I can't seem to catch anything!\p"
 	.string "I'll end up wasting the admission\n"
 	.string "price if I don't catch something!$"
+
+Text_PokeBlockEffectFaded:
+	.string "The {POKEBLOCK}'s effect faded...$"

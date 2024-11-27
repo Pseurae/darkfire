@@ -1373,7 +1373,15 @@ bool32 AddPokeblock(const struct Pokeblock *pokeblock)
 
 void TestGivePokeblock(void)
 {
-    struct Pokeblock pokeblock = { PBLOCK_CLR_RED, 5 };
+    struct Pokeblock pokeblock;
+
+    pokeblock = (struct Pokeblock){ PBLOCK_CLR_RED, 5 };
+    AddPokeblock(&pokeblock);
+
+    pokeblock = (struct Pokeblock){ PBLOCK_CLR_YELLOW, 3, 5 };
+    AddPokeblock(&pokeblock);
+
+    pokeblock = (struct Pokeblock){ PBLOCK_CLR_BLUE, 0, 4 };
     AddPokeblock(&pokeblock);
 }
 

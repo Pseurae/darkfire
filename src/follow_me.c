@@ -38,7 +38,6 @@ Known Issues:
 */
 
 // Defines
-#define PLAYER_AVATAR_FLAG_BIKE    PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE
 
 struct FollowerSpriteGraphics
 {
