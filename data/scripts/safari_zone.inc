@@ -41,6 +41,7 @@ SafariZone_EventScript_OutOfBalls::
 
 EventScript_PokeBlockFeeder::
 	lockall
+	callnative TestGivePokeblock
 	special GetPokeblockFeederInFront
 	goto_if_ne VAR_RESULT, 0xFFFF, SafariZone_EventScript_PokeblockPresent
 	msgbox SafariZone_Text_PlacePokeblockOnFeeder, MSGBOX_YESNO

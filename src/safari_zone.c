@@ -21,7 +21,7 @@ struct PokeblockFeeder
     /*0x08*/ struct Pokeblock pokeblock;
 };
 
-#define NUM_POKEBLOCK_FEEDERS 10
+#define NUM_POKEBLOCK_FEEDERS 30
 
 extern const u8 SafariZone_EventScript_TimesUp[];
 extern const u8 SafariZone_EventScript_RetirePrompt[];

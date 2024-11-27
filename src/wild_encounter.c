@@ -387,7 +387,7 @@ static u8 PickWildMonNature(void)
     struct Pokeblock *safariPokeblock;
     u8 natures[NUM_NATURES];
 
-    if (GetSafariZoneFlag() == TRUE && Random() % 100 < 80)
+    if (/* GetSafariZoneFlag() == TRUE && */ Random() % 100 < 80)
     {
         safariPokeblock = SafariZoneGetActivePokeblock();
         if (safariPokeblock != NULL)

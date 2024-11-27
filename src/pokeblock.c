@@ -1371,6 +1371,12 @@ bool32 AddPokeblock(const struct Pokeblock *pokeblock)
     }
 }
 
+void TestGivePokeblock(void)
+{
+    struct Pokeblock pokeblock = { PBLOCK_CLR_RED, 5 };
+    AddPokeblock(&pokeblock);
+}
+
 bool32 TryClearPokeblock(u8 pkblId)
 {
     if (gSaveBlock1Ptr->pokeblocks[pkblId].color == PBLOCK_CLR_NONE)
